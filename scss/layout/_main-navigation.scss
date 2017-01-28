@@ -1,0 +1,24 @@
+.sp1-site-container {
+	@include flexCenter(row);
+	min-height: 100vh;
+}
+
+.sp1-main-navigation {
+	@include flexCenter(row);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 25%;
+	background-color: $primary-nav-blue;
+	font-family: $cabin;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	text-align: right;
+	text-transform: uppercase;
+	color: $font-light;
+	& ul {
+		list-style-type: none;
+		padding: 0;
+	}
+}

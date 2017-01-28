@@ -1,0 +1,5 @@
+.sp1-content-container {
+	@include flexCenter(row);
+	margin-left: 25%;
+	padding: 4em;
+}
