@@ -1,24 +1,24 @@
-.sp1-site-container {
-	@include flexCenter(row);
-	min-height: 100vh;
-}
-
 .sp1-main-navigation {
-	@include flexCenter(row);
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 25%;
-	background-color: $primary-nav-blue;
-	font-family: $cabin;
-	font-size: 0.8em;
-	letter-spacing: 0.1em;
-	text-align: right;
-	text-transform: uppercase;
-	color: $font-light;
+	height: 100vh;
+	flex: 1 1 25%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 3em;
 	& ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 25vh;
+		width: 100%;
+		color: $font-light;
+		font-family: $cabin;
 		list-style-type: none;
 		padding: 0;
+		margin: 0 auto;
+		text-align: right;
+		border: solid 1px magenta;
+		text-transform: uppercase;
 	}
 }

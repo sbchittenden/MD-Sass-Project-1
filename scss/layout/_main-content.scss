@@ -1,5 +1,19 @@
-.sp1-content-container {
-	@include flexCenter(row);
-	margin-left: 25%;
-	padding: 4em;
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: $primary-nav-blue;
+}
+
+.sp1-site-container {
+	display: flex;
+}
+
+
+
+.sp1-main-content {
+	background-color: $primary-green;
+	height: 100vh;
+	overflow: scroll;
+	flex: 1 1 75%;
 }
