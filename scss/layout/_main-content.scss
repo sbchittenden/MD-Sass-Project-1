@@ -11,11 +11,12 @@ body {
 }
 
 .sp1-section {
-  @include flexContainer(row wrap, center, center);
+  @include flexContainer(row wrap, flex-start, center);
   padding-left: 4em;
   padding-right: 4em;
   &:not(:first-of-type) {
     padding-top: 4em;
+    align-items: center;
   }
   min-height: 100vh;
 }
@@ -98,6 +99,10 @@ body {
 
 #contact {
   background-color: $primary-green;
+  & h1 {
+  	font-size: 2em;
+  }
+  align-items: flex-start;
 }
 
 .subsection__contact-details__wrapper {
@@ -136,6 +141,7 @@ body {
 		padding: 1em;
 		outline: none;
 		color: $font-light;
+		border-radius: 3px;
 		transition: all 0.35s ease;
 		&:focus {
 			border: solid 1px $font-light;

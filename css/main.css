@@ -576,7 +576,7 @@ body {
 
 .sp1-section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
   padding-left: 4em;
@@ -585,6 +585,7 @@ body {
 }
 .sp1-section:not(:first-of-type) {
   padding-top: 4em;
+  align-items: center;
 }
 
 .sp1-main-content {
@@ -674,6 +675,10 @@ body {
 
 #contact {
   background-color: #2E9692;
+  align-items: flex-start;
+}
+#contact h1 {
+  font-size: 2em;
 }
 
 .subsection__contact-details__wrapper {
@@ -719,6 +724,7 @@ body {
   padding: 1em;
   outline: none;
   color: #ffffff;
+  border-radius: 3px;
   transition: all 0.35s ease;
 }
 .sp1-contact-form textarea:focus {
