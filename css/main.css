@@ -547,7 +547,7 @@ button {
   justify-content: space-between;
   height: 25vh;
   width: 100%;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
   font-family: "Oswald", Helvetica, Arial, sans-serif;
   list-style-type: none;
   padding: 0 0 0 3em;
@@ -558,8 +558,22 @@ button {
 .sp1-main-navigation ul li {
   letter-spacing: 0.15em;
   font-size: 0.765em;
+  padding-bottom: 1.25em;
   border-bottom: solid 2px rgba(110, 121, 129, 0.5);
-  padding: 1.25em 0;
+  transition: all 0.5s ease;
+}
+.sp1-main-navigation ul li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1.25em 0 1.25em 50%;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.sp1-main-navigation ul li a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+.sp1-main-navigation ul li:hover {
+  border-bottom: solid 2px #B84D50;
 }
 
 * {
