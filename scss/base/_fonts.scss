@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin:600|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Open+Sans');
 // fonts
-$cabin: 'Cabin',
+$oswald: 'Oswald',
 Helvetica,
 Arial,
 sans-serif;
@@ -11,7 +11,8 @@ sans-serif;
 h1,
 h2,
 h3 {
-  font-family: $cabin;
+  font-family: $oswald;
+  color: $font-light;
   margin-top: 1em;
 }
 

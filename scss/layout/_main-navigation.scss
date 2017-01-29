@@ -13,12 +13,18 @@
 		height: 25vh;
 		width: 100%;
 		color: $font-light;
-		font-family: $cabin;
+		font-family: $oswald;
 		list-style-type: none;
-		padding: 0;
+		padding: 0 0 0 3em;
 		margin: 0 auto;
 		text-align: right;
-		border: solid 1px magenta;
+		// border: solid 1px magenta;
 		text-transform: uppercase;
+		& li {
+			letter-spacing: 0.15em;
+			font-size: 0.765em;
+			border-bottom: solid 2px transparentize($font-gray, 0.5);
+			padding: 1.25em 0;
+		}
 	}
 }
