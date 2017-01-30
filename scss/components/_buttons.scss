@@ -17,6 +17,7 @@ button {
 	font-size: 0.75em;
 	transition: all 0.75s ease;
 	margin-top: 2em;
+	margin-bottom: 1em;
 	&:hover {
 		background-color: transparentize($font-light, 0.9)
 	}

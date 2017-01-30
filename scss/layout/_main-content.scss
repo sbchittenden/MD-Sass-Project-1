@@ -42,6 +42,7 @@ body {
     padding-right: 4em;
     & .subsection__image-block {
       @include flexContainer(row, center, center);
+
       flex: 1 1 33%;
       overflow: hidden;
       & img {
