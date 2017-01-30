@@ -1,44 +1,63 @@
 .sp1-main-navigation {
-	height: 100vh;
-	flex: 1 1 25%;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-right: 3em;
-	& ul {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 25vh;
-		width: 100%;
-		color: transparentize($font-light, 0.5);
-		font-family: $oswald;
-		list-style-type: none;
-		padding: 0 0 0 3em;
-		margin: 0 auto;
-		text-align: right;
-		// border: solid 1px magenta;
-		text-transform: uppercase;
-		& li {
-			letter-spacing: 0.15em;
-			font-size: 0.765em;
-			padding-bottom: 1.25em;
-			border-bottom: solid 2px transparentize($font-gray, 0.5);
-			transition: all 0.5s ease;
-			& a {
-				text-decoration: none;
-				color: inherit;
-				padding: 1.25em 0 1.25em 50%;
-				width: 100%;
-				transition: all 0.3s ease;
-				&:hover {
-					color: transparentize($font-light, 0.15);
-				}
-			}
-			&:hover {
-				border-bottom: solid 2px $primary-red;;
-			}
-		}
-	}
+  height: 100vh;
+  flex: 1 1 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 3em;
+  @media screen and (max-width: 1030px) {
+  	position: fixed;
+  	background-color: black;
+  	width: 100%;
+  	height: 4em;
+  	padding: 0;
+  	flex: 1 1 100%;
+  }
+  & ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+    width: 100%;
+    @media screen and (max-width: 1030px) {
+    	flex-direction: row;
+    	height: 3em;
+    	text-align: center;
+    	justify-content: space-around;
+    	align-items: center;
+    	padding: 0;
+    }
+    color: transparentize($font-light, 0.5);
+    font-family: $oswald;
+    list-style-type: none;
+    padding: 0 0 0 3em;
+    margin: 0 auto;
+    text-align: right;
+    // border: solid 1px magenta;
+    text-transform: uppercase;
+    & li {
+      letter-spacing: 0.15em;
+      font-size: 0.765em;
+      padding-bottom: 1.25em;
+      border-bottom: solid 2px transparentize($font-gray, 0.5);
+      transition: all 0.5s ease;
+      & a {
+        text-decoration: none;
+        color: inherit;
+        padding: 1.25em 0 1.25em 50%;
+        @media screen and (max-width: 1030px) {
+        	padding: 0;
+        }
+        width: 100%;
+        transition: all 0.3s ease;
+        &:hover {
+          color: transparentize($font-light, 0.15);
+        }
+      }
+      &:hover {
+        border-bottom: solid 2px $primary-red;
+        ;
+      }
+    }
+  }
 }

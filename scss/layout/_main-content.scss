@@ -42,14 +42,16 @@ body {
     padding-right: 4em;
     & .subsection__image-block {
       @include flexContainer(row, center, center);
-      height: 100%;
       flex: 1 1 33%;
+      overflow: hidden;
       & img {
+      	// height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
     }
     & .subsection__content-block {
+    	// width: 100%;
       flex: 1 1 67%;
       padding-left: 4em;
       & h1 {

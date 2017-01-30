@@ -535,11 +535,20 @@ button {
 .sp1-main-navigation {
   height: 100vh;
   flex: 1 1 25%;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 3em;
+}
+@media screen and (max-width: 1030px) {
+  .sp1-main-navigation {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 4em;
+    padding: 0;
+    flex: 1 1 100%;
+  }
 }
 .sp1-main-navigation ul {
   display: flex;
@@ -555,6 +564,16 @@ button {
   text-align: right;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1030px) {
+  .sp1-main-navigation ul {
+    flex-direction: row;
+    height: 3em;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+}
 .sp1-main-navigation ul li {
   letter-spacing: 0.15em;
   font-size: 0.765em;
@@ -568,6 +587,11 @@ button {
   padding: 1.25em 0 1.25em 50%;
   width: 100%;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 1030px) {
+  .sp1-main-navigation ul li a {
+    padding: 0;
+  }
 }
 .sp1-main-navigation ul li a:hover {
   color: rgba(255, 255, 255, 0.85);
@@ -631,12 +655,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: row;
-  height: 100%;
   flex: 1 1 33%;
+  overflow: hidden;
 }
 #what .sp1-subsection .subsection__image-block img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 #what .sp1-subsection .subsection__content-block {
   flex: 1 1 67%;
