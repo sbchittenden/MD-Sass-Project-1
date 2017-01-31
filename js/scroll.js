@@ -4,7 +4,8 @@ mainNav.addEventListener('click', scrollTo);
 
 function scrollTo(e) {
   e.preventDefault();
-  var linkId = e.target.nodeName === 'A' ? e.target.getAttribute('href').slice(1) : null;
-  document.getElementById(linkId).scrollIntoView({ behavior: "smooth" });
+  var linkID = e.target.getAttribute('href').slice(1);
+  document.getElementById(linkID).scrollIntoView({ 
+  behavior: 'smooth' 
+});
 }
-
