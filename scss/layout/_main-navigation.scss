@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding-right: 3em;
-  @media screen and (max-width: 1098px) {
+  @media screen and (max-width: 1180px) {
   	position: fixed;
   	background-color: $primary-nav-blue;
   	width: 100%;
@@ -19,7 +19,7 @@
     justify-content: space-between;
     height: 25vh;
     width: 100%;
-    @media screen and (max-width: 1098px) {
+    @media screen and (max-width: 1180px) {
     	flex-direction: row;
     	height: 3em;
     	text-align: center;
@@ -39,7 +39,7 @@
       letter-spacing: 0.15em;
       font-size: 0.765em;
       padding-bottom: 1.25em;
-      @media screen and (max-width: 1098px) {
+      @media screen and (max-width: 1180px) {
       	padding-bottom: 0.5em;
       }
       border-bottom: solid 2px transparentize($font-gray, 0.5);
@@ -48,7 +48,7 @@
         text-decoration: none;
         color: inherit;
         padding: 1.25em 0 1.25em 50%;
-        @media screen and (max-width: 1098px) {
+        @media screen and (max-width: 1180px) {
         	padding: 0;
         }
         width: 100%;

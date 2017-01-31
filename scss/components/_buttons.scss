@@ -21,4 +21,7 @@ button {
 	&:hover {
 		background-color: transparentize($font-light, 0.9)
 	}
+	  @media screen and (max-width: 526px) {
+    width: 100%;
+  }
 }
