@@ -538,12 +538,121 @@ button {
   }
 }
 
+.sp1-contact-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  flex: 1 1 65%;
+  border-right: solid 1px rgba(255, 255, 255, 0.25);
+}
+@media screen and (min-width: 676px) and (max-width: 844px) {
+  .sp1-contact-form {
+    margin-bottom: 2em;
+  }
+}
+@media screen and (max-width: 675px) {
+  .sp1-contact-form {
+    flex: 1 1 100%;
+    border-right: none;
+  }
+}
+@media screen and (max-width: 526px) {
+  .sp1-contact-form {
+    width: 100%;
+  }
+}
+.sp1-contact-form label {
+  display: block;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  margin-bottom: 1em;
+}
+.sp1-contact-form input {
+  width: 100%;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 1em;
+  outline: none;
+  color: #ffffff;
+  border-radius: 3px;
+  transition: all 0.35s ease;
+}
+.sp1-contact-form input:focus {
+  border: solid 1px #ffffff;
+}
+.sp1-contact-form textarea {
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  color: #ffffff;
+  border-radius: 3px;
+  transition: all 0.35s ease;
+}
+.sp1-contact-form textarea:focus {
+  border: solid 1px #ffffff;
+}
+
+.form-group {
+  flex: 1 1 auto;
+  margin-right: 2em;
+  margin-bottom: 1.5em;
+}
+.form-group:nth-of-type(3) {
+  flex: 1 1 100%;
+}
+@media screen and (max-width: 526px) {
+  .form-group {
+    margin-right: 0;
+  }
+}
+
+.sp1-contact-info {
+  flex: 1 1 35%;
+  padding-left: 2em;
+}
+@media screen and (max-width: 675px) {
+  .sp1-contact-info {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+}
+.sp1-contact-info h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.sp1-contact-info p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.social-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+.social-links li {
+  display: inline;
+  margin-right: 0.75em;
+}
+@media screen and (max-width: 676px) {
+  .social-links {
+    margin-bottom: 2em;
+  }
+}
+
 .sp1-main-navigation {
   height: 100vh;
   flex: 1 1 25%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row;
   padding-right: 3em;
 }
 @media screen and (max-width: 1180px) {
@@ -558,8 +667,8 @@ button {
 }
 .sp1-main-navigation ul {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-flow: column;
   height: 25vh;
   width: 100%;
   color: rgba(255, 255, 255, 0.5);
@@ -572,20 +681,21 @@ button {
 }
 @media screen and (max-width: 1180px) {
   .sp1-main-navigation ul {
-    flex-direction: row;
-    height: 3em;
-    text-align: center;
+    display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-flow: row;
+    height: 3em;
+    text-align: center;
     padding: 0;
   }
 }
 .sp1-main-navigation ul li {
   letter-spacing: 0.15em;
   font-size: 0.765em;
-  padding-bottom: 1.25em;
   border-bottom: solid 2px rgba(110, 121, 129, 0.5);
   transition: all 0.5s ease;
+  padding-bottom: 1.25em;
 }
 @media screen and (max-width: 1180px) {
   .sp1-main-navigation ul li {
@@ -595,9 +705,9 @@ button {
 .sp1-main-navigation ul li a {
   text-decoration: none;
   color: inherit;
-  padding: 1.25em 0 1.25em 50%;
   width: 100%;
   transition: all 0.3s ease;
+  padding: 1.25em 0 1.25em 50%;
 }
 @media screen and (max-width: 1180px) {
   .sp1-main-navigation ul li a {
@@ -609,18 +719,6 @@ button {
 }
 .sp1-main-navigation ul li:hover {
   border-bottom: solid 2px #B84D50;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #20313D;
-}
-
-.sp1-site-container {
-  display: flex;
 }
 
 .sp1-section {
@@ -635,6 +733,18 @@ body {
 .sp1-section:not(:first-of-type) {
   padding-top: 4em;
   align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #20313D;
+}
+
+.sp1-site-container {
+  display: flex;
 }
 
 .sp1-main-content {
@@ -759,119 +869,11 @@ body {
   width: 100%;
 }
 
-.sp1-contact-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: row wrap;
-  flex: 1 1 65%;
-  border-right: solid 1px rgba(255, 255, 255, 0.25);
-}
-@media screen and (min-width: 676px) and (max-width: 844px) {
-  .sp1-contact-form {
-    margin-bottom: 2em;
-  }
-}
-@media screen and (max-width: 675px) {
-  .sp1-contact-form {
-    flex: 1 1 100%;
-    border-right: none;
-  }
-}
-@media screen and (max-width: 526px) {
-  .sp1-contact-form {
-    width: 100%;
-  }
-}
-.sp1-contact-form label {
-  display: block;
-  color: #ffffff;
-  font-size: 1.2em;
-  font-family: "Oswald", Helvetica, Arial, sans-serif;
-  margin-bottom: 1em;
-}
-.sp1-contact-form input {
-  width: 100%;
-  border: solid 1px rgba(255, 255, 255, 0.25);
-  background-color: rgba(255, 255, 255, 0.08);
-  padding: 1em;
-  outline: none;
-  color: #ffffff;
-  border-radius: 3px;
-  transition: all 0.35s ease;
-}
-.sp1-contact-form input:focus {
-  border: solid 1px #ffffff;
-}
-.sp1-contact-form textarea {
-  border: solid 1px rgba(255, 255, 255, 0.25);
-  background-color: rgba(255, 255, 255, 0.08);
-  width: 100%;
-  padding: 1em;
-  outline: none;
-  color: #ffffff;
-  border-radius: 3px;
-  transition: all 0.35s ease;
-}
-.sp1-contact-form textarea:focus {
-  border: solid 1px #ffffff;
-}
-
-.form-group {
-  flex: 1 1 auto;
-  margin-right: 2em;
-  margin-bottom: 1.5em;
-}
-.form-group:nth-of-type(3) {
-  flex: 1 1 100%;
-}
-@media screen and (max-width: 526px) {
-  .form-group {
-    margin-right: 0;
-  }
-}
-
-.sp1-contact-info {
-  flex: 1 1 35%;
-  padding-left: 2em;
-}
-@media screen and (max-width: 675px) {
-  .sp1-contact-info {
-    flex: 1 1 100%;
-    padding: 0;
-  }
-}
-.sp1-contact-info h3 {
-  font-size: 1.2em;
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-.sp1-contact-info p {
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-.social-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.5);
-}
-.social-links li {
-  display: inline;
-  margin-right: 0.75em;
-}
-@media screen and (max-width: 676px) {
-  .social-links {
-    margin-bottom: 2em;
-  }
-}
-
 .sp1-footer {
-  background-color: #1c5b59;
-  padding: 4rem;
-  color: rgba(255, 255, 255, 0.25);
   font-size: 0.8em;
+  padding: 4rem;
+  background-color: #1c5b59;
+  color: rgba(255, 255, 255, 0.25);
 }
 
 /*# sourceMappingURL=main.css.map */

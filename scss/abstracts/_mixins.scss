@@ -4,3 +4,9 @@
 	align-items: $align-items;
 	flex-flow: $flex-flow;
 }
+
+@mixin media-max($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
